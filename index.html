@@ -117,6 +117,9 @@ h2::after{content:"\2665";width:6.5rem;height:auto;text-align:center;font-size:.
 #measure,#premade,#application,#about,#seasonsec{scroll-margin-top:6rem}
 @media(min-width:721px){.hero{grid-template-columns:1fr 1.15fr;align-items:center}.hero .pfp{height:auto;max-height:620px;width:auto;max-width:100%;justify-self:center;object-fit:contain}}
 @media(max-width:720px){.ah{grid-column:auto}}
+h2::after{content:"";height:1rem;font-size:0;background:linear-gradient(#4f3022,#4f3022) left center/2.3rem 2px no-repeat,linear-gradient(#4f3022,#4f3022) right center/2.3rem 2px no-repeat,url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%234f3022' stroke='%234f3022' stroke-width='2' stroke-linejoin='round' d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/%3E%3C/svg%3E") center/.9rem no-repeat}
+.heart{width:1.7rem;height:1.7rem;font-size:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%234f3022' stroke-width='2' stroke-linejoin='round' d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/%3E%3C/svg%3E") center/1.2rem no-repeat}.heart.on{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%234f3022' stroke='%234f3022' stroke-width='2' stroke-linejoin='round' d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z'/%3E%3C/svg%3E")}.heart::before,.heart.on::before{content:none}
+.favbtn svg{vertical-align:-3px}
 </style>
 </head>
 <body>
@@ -129,7 +132,7 @@ h2::after{content:"\2665";width:6.5rem;height:auto;text-align:center;font-size:.
     <div class="dd"><a href="#sizing" data-v="sizing">Sizing &#9662;</a><div class="menu"><a href="#kit">Sizing kit</a><a href="#measure">Nail measurement guide</a><a href="#premade">Premade size</a><span>Nailstry (app that measures your nail size)</span><a href="#application">Application guide</a></div></div>
     <div class="dd"><a href="#collection" data-v="collection">Collection &#9662;</a><div class="menu"><a href="#c-summer">Summer collection</a><a href="#c-winter">Winter collection</a><a href="#c-spring">Spring collection</a><a href="#c-fall">Fall collection</a><a href="#collection"><strong>Browse all</strong></a><small>Limited sets</small><a href="#c-mlp">MLP collection</a><a href="#c-sanrio">Sanrio collection</a><a href="#c-miffy">Miffy collection</a><a href="#c-holiday">Holiday collection</a></div></div>
   </nav>
-  <a class="favbtn" href="#favorites" data-v="favorites" aria-label="Favorites">&#9829; <span id="favc">0</span></a>
+  <a class="favbtn" href="#favorites" data-v="favorites" aria-label="Favorites"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="#4f3022" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg> <span id="favc">0</span></a>
   <button class="cartbtn" id="openCart" aria-label="Open cart">Cart (<span id="count">0</span>)</button>
 </header>
 
